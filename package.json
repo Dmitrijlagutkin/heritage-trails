@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.2.5",
+    "@astrolicious/i18n": "^0.6.1",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "astro": "^5.7.5",
+    "i18next": "^23.16.8",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   }
