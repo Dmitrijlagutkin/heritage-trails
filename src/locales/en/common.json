@@ -1,0 +1,53 @@
+{
+  "home": {
+    "main_screen": {
+      "title": "Heritage Trails",
+      "subtitle": "Discover the Wild, Walk Through Time",
+      "description_1": "Explore <span>{{PARK_TYPE}}</span>, all in one place.",
+      "description_2": "Tap on the map to uncover photos, stories, and hidden gems across preserved lands. Whether you're planning a visit or just curious, <span>Heritage Trails</span> brings nature and history to your fingertips."
+    },
+    "map_section": {
+      "title": "Explore National Heritage",
+      "subtitle": "Discover Parks, Monuments & Historic Places Across the USA",
+      "description": "From awe-inspiring natural wonders to historic battlefields and cultural landmarks—uncover the stories and sites that define the nation. Use the map to find and explore these remarkable destinations.",
+      "button": "Explore on the Map"
+    },
+    "features_section": {
+      "title": "Features",
+      "description": "Heritage Trails is a platform that allows you to explore the history of the United States. It is a platform that allows you to explore the history of the United States."
+    },
+    "footer": {
+      "about": {
+        "title": "About Us",
+        "description": "Discover the beauty of national parks",
+        "links": {
+          "about": "About",
+          "contact": "Contact",
+          "privacy": "Privacy"
+        }
+      },
+      "explore": {
+        "title": "Explore",
+        "links": {
+          "parks": "Parks",
+          "trails": "Trails",
+          "activities": "Activities"
+        }
+      },
+      "legal": {
+        "title": "Legal",
+        "links": {
+          "terms": "Terms",
+          "privacy": "Privacy",
+          "cookies": "Cookies"
+        }
+      },
+      "social": {
+        "title": "Follow Us"
+      },
+      "copyright": "National Parks © 2024",
+      "sitemap": "Sitemap",
+      "accessibility": "Accessibility"
+    }
+  }
+}

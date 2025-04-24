@@ -1,0 +1,26 @@
+---
+import { t } from 'i18n:astro';
+
+const parkType = 'DYNAMIC WORD';
+---
+
+<div class="container">
+    <h1>{t('home.main_screen.title')}</h1>
+    <h2>{t('home.main_screen.subtitle')}</h2>
+    <p class="translation" set:html={t('home.main_screen.description_1', { PARK_TYPE: parkType })}></p>
+    <p class="test" set:html={t('home.main_screen.description_2')}></p>
+</div>
+
+<style is:global>
+    .translation span {
+        color: #4CAF50 !important;
+        font-weight: 600 !important;
+    }
+
+    .test span {
+        color: #DAfC10 !important;
+        font-weight: 600 !important;
+    }
+</style>
+
+

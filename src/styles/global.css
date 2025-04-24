@@ -1,0 +1,63 @@
+:root {
+  --color-text: #1a1a1a;
+  --color-text-light: #666;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: var(--color-text);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: var(--font-weight-semibold);
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: var(--font-weight-semibold);
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Links */
+a {
+  color: var(--color-text-light);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-text);
+}
+
+/* Lists */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+}

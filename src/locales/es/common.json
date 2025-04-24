@@ -1,0 +1,53 @@
+{
+  "home": {
+    "main_screen": {
+      "title": "Senderos del Patrimonio",
+      "subtitle": "Descubre la Naturaleza Salvaje, Camina a Través del Tiempo",
+      "description_1": "Explora <span>{{PARK_TYPE}}</span>, todo en un solo lugar.",
+      "description_2": "Toca en el mapa para descubrir fotos, historias y gemas ocultas en tierras preservadas. Ya sea que planees una visita o simplemente estés curioso, <span>Senderos del Patrimonio</span> acerca la naturaleza y la historia a tus dedos."
+    },
+    "map_section": {
+      "title": "Explora el Patrimonio Nacional",
+      "subtitle": "Descubre Parques, Monumentos y Lugares Históricos en todo Estados Unidos",
+      "description": "Desde impresionantes maravillas naturales hasta campos de batalla históricos y sitios culturales—descubre las historias y lugares que definen la nación. Usa el mapa para encontrar y explorar estos destinos excepcionales.",
+      "button": "Explorar en el Mapa"
+    },
+    "features_section": {
+      "title": "Características",
+      "description": "Senderos del Patrimonio es una plataforma que te permite explorar la historia de los Estados Unidos. Es una plataforma que te permite explorar la historia de los Estados Unidos."
+    },
+    "footer": {
+      "about": {
+        "title": "Sobre Nosotros",
+        "description": "Descubre la historia y la cultura de los Estados Unidos.",
+        "links": {
+          "about": "Sobre Nosotros",
+          "contact": "Contacto",
+          "privacy": "Privacidad"
+        }
+      },
+      "explore": {
+        "title": "Explorar",
+        "links": {
+          "parks": "Parques",
+          "trails": "Senderos",
+          "activities": "Actividades"
+        }
+      },
+      "legal": {
+        "title": "Legal",
+        "links": {
+          "terms": "Términos y Condiciones",
+          "privacy": "Privacidad",
+          "cookies": "Cookies"
+        }
+      },
+      "social": {
+        "title": "Síguenos en Redes Sociales"
+      },
+      "copyright": "Parques Nacionales © 2024",
+      "sitemap": "Mapa del Sitio",
+      "accessibility": "Accesibilidad"
+    }
+  }
+}
