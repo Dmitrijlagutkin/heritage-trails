@@ -3,6 +3,8 @@ import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 import i18n from "@astrolicious/i18n";
 
+import tailwindcss from "@tailwindcss/vite";
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [
@@ -15,4 +17,8 @@ export default defineConfig({
       },
     }),
   ],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
