@@ -62,4 +62,8 @@ type TranslationKeys = {
       accessibility: string;
     };
   };
+  header: {
+    explore_map: string;
+    about: string;
+  };
 };

@@ -49,5 +49,9 @@
       "sitemap": "Mapa del Sitio",
       "accessibility": "Accesibilidad"
     }
+  },
+  "header": {
+    "explore_map": "Explorar en el Mapa",
+    "about": "Acerca de"
   }
 }
