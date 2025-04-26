@@ -1,10 +1,12 @@
 ---
 import { t } from 'i18n:astro';
+import { Description } from './Description';
 ---
 
 <div class="main-section">
     <h1>{t('home.main_screen.title')}</h1>
     <h2>{t('home.main_screen.subtitle')}</h2>
+    <Description/>
     <p class="translation" set:html={t('home.main_screen.description_1', { PARK_TYPE: 'parkType' })}></p>
     <p class="test" set:html={t('home.main_screen.description_2')}></p>
 </div>
