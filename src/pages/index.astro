@@ -1,20 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
-import MainSection from '../components/MainSection.astro';
-import { MapSection } from '../components/MapSection';
-import FeaturesSection from '../components/FeaturesSection.astro';
-import LanguageSwitcher from '../components/LanguageSwitcher';
-import { t } from '../lib/i18n';
+import MainSection from '../features/main-section/components/MainSection.astro';
+import { MapSection } from '../features/map-section/components/MapSection';
+import FeaturesSection from '../features/features-section/components/FeaturesSection.astro';
+import { t } from '../i18n/i18n';
 
 const defaultLocale = 'en';
 const locale = defaultLocale;
 ---
 
 <Layout title={t('home.main_screen.title', locale)}>
-	<Header>
-		<LanguageSwitcher currentLocale={locale} />
-	</Header>
+	<Header />
 	<MainSection />
 	<MapSection client:idle currentLocale={locale} />
 	<FeaturesSection />

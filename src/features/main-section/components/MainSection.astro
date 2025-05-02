@@ -1,0 +1,52 @@
+---
+import Button from '../../../components/Button.astro';
+import { t } from '../../../i18n/i18n';
+const { currentLocale } = Astro;
+
+const locale = currentLocale || 'en';
+---
+
+<section class="min-h-screen flex items-center justify-center bg-main-section bg-cover bg-center p-8 text-center">
+    <div class="max-w-[800px] ">
+        <h1 class="text-7xl font-bold mb-6 leading-tight text-natural-white">
+            {t('home.main_screen.title', locale)}
+        </h1>
+        <p class="text-xl mb-8 opacity-90 text-natural-white">
+            {t('home.main_screen.subtitle', locale)}
+        </p>
+        <div class="flex gap-4 justify-center">
+            <Button href="/map" variant="primary">Explore Map</Button>
+            <Button href="/about" variant="secondary">Learn More</Button>
+        </div>
+    </div>
+</section>
+
+<style>
+  
+
+    .main-section__content {
+        max-width: 800px;
+        color: var(--color-natural-white);
+    }
+
+    .main-section__title {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .main-section__description {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+    }
+
+    .main-section__buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+</style>
+
+
