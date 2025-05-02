@@ -1,9 +1,12 @@
 ---
 import Button from '../../../components/Button.astro';
+import Trans from '../../../components/Trans.astro';
 import { t } from '../../../i18n/i18n';
 const { currentLocale } = Astro;
 
 const locale = currentLocale || 'en';
+
+
 ---
 
 <section class="min-h-screen flex items-center justify-center bg-main-section bg-cover bg-center p-8 text-center">
@@ -11,8 +14,21 @@ const locale = currentLocale || 'en';
         <h1 class="text-7xl font-bold mb-6 leading-tight text-natural-white">
             {t('home.main_screen.title', locale)}
         </h1>
-        <p class="text-xl mb-8 opacity-90 text-natural-white">
+        <p class="text-5xl mb-8 opacity-90 text-natural-white">
             {t('home.main_screen.subtitle', locale)}
+        </p>
+        <p>
+            <Trans 
+                key="home.main_screen.description_1" 
+                locale={locale} 
+                class="text-secondary-200 font-bold" 
+                name="PARK_TYPE"
+                dynamicText="National Parks"
+                mainClass="text-xl mb-8 opacity-90 text-natural-white"
+            />
+        </p>
+        <p class="text-xl mb-8 opacity-90 text-natural-white">
+            {t('home.main_screen.description_2', locale)}
         </p>
         <div class="flex gap-4 justify-center">
             <Button href="/map" variant="primary">Explore Map</Button>
@@ -20,33 +36,3 @@ const locale = currentLocale || 'en';
         </div>
     </div>
 </section>
-
-<style>
-  
-
-    .main-section__content {
-        max-width: 800px;
-        color: var(--color-natural-white);
-    }
-
-    .main-section__title {
-        font-size: 3.5rem;
-        font-weight: 700;
-        margin-bottom: 1.5rem;
-        line-height: 1.2;
-    }
-
-    .main-section__description {
-        font-size: 1.25rem;
-        margin-bottom: 2rem;
-        opacity: 0.9;
-    }
-
-    .main-section__buttons {
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
-    }
-</style>
-
-
