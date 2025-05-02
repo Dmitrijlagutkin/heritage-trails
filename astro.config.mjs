@@ -5,7 +5,12 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), tailwind()],
+  integrations: [
+    react(),
+    tailwind({
+      applyBaseStyles: false,
+    }),
+  ],
   i18n: {
     defaultLocale: "en",
     locales: ["en", "ua", "es"],
@@ -17,5 +22,12 @@ export default defineConfig({
   output: "static",
   build: {
     format: "directory",
+  },
+  vite: {
+    resolve: {
+      alias: {
+        "@": "/src",
+      },
+    },
   },
 });
