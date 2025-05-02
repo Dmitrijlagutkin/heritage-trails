@@ -6,15 +6,16 @@ interface Props {
     locale: string;
     class?: string;
     mainClass?: string;
-    name: string;
-    dynamicText: string;
+    name?: string;
+    dynamicText?: string;
 }
 
 const { key: translationKey, locale, class: className, name, dynamicText, mainClass } = Astro.props;
 
 const translation = t(translationKey, locale);
-const styledText = `<span class="${className}">${dynamicText}</span>`;
-const result = translation.replace(`[${name}]`, styledText);
+const result = name && dynamicText 
+    ? translation.replace(`[${name}]`, `<span class="${className}">${dynamicText}</span>`)
+    : translation.replace(/<span>/g, `<span class="${className}">`);
 ---
 
 <div class:list={[mainClass]} set:html={result} /> 

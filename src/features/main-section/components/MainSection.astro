@@ -5,8 +5,6 @@ import { t } from '../../../i18n/i18n';
 const { currentLocale } = Astro;
 
 const locale = currentLocale || 'en';
-
-
 ---
 
 <section class="min-h-screen flex items-center justify-center bg-main-section bg-cover bg-center p-8 text-center">
@@ -27,8 +25,13 @@ const locale = currentLocale || 'en';
                 mainClass="text-xl mb-8 opacity-90 text-natural-white"
             />
         </p>
-        <p class="text-xl mb-8 opacity-90 text-natural-white">
-            {t('home.main_screen.description_2', locale)}
+        <p>
+            <Trans 
+                key="home.main_screen.description_2" 
+                locale={locale} 
+                class="font-bold" 
+                mainClass="text-xl mb-8 opacity-90 text-natural-white"
+            />
         </p>
         <div class="flex gap-4 justify-center">
             <Button href="/map" variant="primary">Explore Map</Button>
