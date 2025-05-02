@@ -1,126 +1,54 @@
 ---
-import { t } from 'i18n:astro';
-import { Description } from './Description';
+import Button from './Button.astro';
 ---
 
-<div class="main-section">
-    <h1>{t('home.main_screen.title')}</h1>
-    <h2>{t('home.main_screen.subtitle')}</h2>
-    <Description/>
-    <p class="translation" set:html={t('home.main_screen.description_1', { PARK_TYPE: 'parkType' })}></p>
-    <p class="test" set:html={t('home.main_screen.description_2')}></p>
-</div>
-
-<script>
-    document.addEventListener('parkTypeChange', (e: CustomEvent) => {
-        const parkTypeElement = document.getElementById('park-type');
-        if (parkTypeElement) {
-            parkTypeElement.textContent = e.detail.parkType;
-        }
-    });
-</script>
+<section class="main-section">
+    <div class="main-section__content">
+        <h1 class="main-section__title">Discover the Beauty of National Parks</h1>
+        <p class="main-section__description">
+            Explore breathtaking landscapes, diverse wildlife, and unforgettable adventures in our national parks.
+        </p>
+        <div class="main-section__buttons">
+            <Button href="/map" variant="primary">Explore Map</Button>
+            <Button href="/about" variant="secondary">Learn More</Button>
+        </div>
+    </div>
+</section>
 
 <style>
     .main-section {
-        height: 100vh;
-        width: 100%;
-        position: relative;
-        overflow: hidden;
-        padding: 24px;
-        box-sizing: border-box;
-        margin: 0;
-        text-align: center;
+        min-height: 100vh;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
-        color: var(--color-natural-white);
+        justify-content: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                    url('/assets/homeMainSectionBG.jpg') center/cover;
+        padding: 2rem;
+        text-align: center;
     }
 
-    .main-section::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url('/assets/homeMainSectionBG.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        filter: brightness(0.8) contrast(1.1);
-        z-index: -1;
-        animation: backgroundZoom 20s ease-in-out infinite alternate;
-    }
-
-    .main-section::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-size: cover;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%),
-            radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
-        z-index: -1;
-    }
-
-    @keyframes backgroundZoom {
-        0% {
-            transform: scale(1);
-        }
-        100% {
-            transform: scale(1.1);
-        }
-    }
-
-    h1 {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-        position: relative;
-        z-index: 1;
-        color: var(--color-natural-white);
-    }
-
-    h2 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-        position: relative;
-        z-index: 1;
-        color: var(--color-natural-white);
-    }
-
-    p {
-        font-size: 1.2rem;
+    .main-section__content {
         max-width: 800px;
-        margin-bottom: 1rem;
-        position: relative;
-        z-index: 1;
         color: var(--color-natural-white);
     }
 
-    .dynamic-text {
-        color: #4CAF50;
-        font-weight: 600;
-        transition: opacity 0.3s ease;
+    .main-section__title {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
     }
 
-    .dynamic-text-container {
-        display: inline-block;
-        min-width: 200px;
-    }
-</style>
-
-<style is:global>
-    .translation span {
-        color: #4CAF50 !important;
-        font-weight: 600 !important;
+    .main-section__description {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
     }
 
-    .test span {
-        color: #DAfC10 !important;
-        font-weight: 600 !important;
+    .main-section__buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
     }
 </style>
 

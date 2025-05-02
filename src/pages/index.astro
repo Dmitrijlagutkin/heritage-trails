@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import MainSection from '../components/MainSection.astro';
+import { MapSection } from '../components/MapSection';
+import FeaturesSection from '../components/FeaturesSection.astro';
+---
+
+<Layout title="Heritage Trails - Explore National Parks">
+	<Header />
+	<MainSection />
+	<MapSection client:idle />
+	<FeaturesSection />
+</Layout> 

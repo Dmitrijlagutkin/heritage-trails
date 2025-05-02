@@ -1,26 +1,19 @@
 ---
-import { getLocale, getLocales, switchLocalePath } from 'i18n:astro';
-
-type Locale = 'en' | 'es' | 'ua';
-const currentLocale = getLocale();
-const locales = getLocales();
-const localeLabels: Record<Locale, string> = {
-  en: 'EN',
-  es: 'ES',
-  ua: 'UA'
-};
+const languages = [
+  { code: 'en', name: 'English' },
+  { code: 'ua', name: 'Українська' },
+  { code: 'ru', name: 'Русский' }
+];
 ---
 
 <div class="language-switcher">
-  {locales.map((locale: Locale) => (
-    <a 
-      href={switchLocalePath(locale)}
-      class:list={[
-        'language-link',
-        currentLocale === locale && 'active'
-      ]}
+  {languages.map((lang) => (
+    <a
+      href={`?lang=${lang.code}`}
+      class="language-link"
+      data-lang={lang.code}
     >
-      {localeLabels[locale]}
+      {lang.name}
     </a>
   ))}
 </div>
@@ -30,12 +23,19 @@ const localeLabels: Record<Locale, string> = {
     display: flex;
     gap: 1rem;
   }
+
   .language-link {
     text-decoration: none;
-    color: #666;
+    color: var(--color-natural-white);
+    font-weight: 500;
+    transition: opacity 0.3s ease;
   }
+
+  .language-link:hover {
+    opacity: 0.8;
+  }
+
   .language-link.active {
-    color: #000;
-    font-weight: bold;
+    font-weight: 600;
   }
 </style> 
