@@ -1,20 +1,24 @@
 ---
-import { t } from 'i18n:astro';
-import LanguageSwitcher from './LanguageSwitcher.astro';
+import LanguageSwitcher from './LanguageSwitcher';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+import { t } from '../lib/i18n';
+const { currentLocale } = Astro;
+
+const locale = currentLocale || 'en';
 ---
 
 <header class="header">
     <div class="header-container">
         <div class="logo">
-            <a href="/" class="logo-text">Heritage Trails</a>
+            <a href={getRelativeLocaleUrl(locale, '')} class="logo-text">Heritage Trails</a>
         </div>
         <nav class="navigation">
             <ul>
-                <li><a href="/contact">{t('header.explore_map')}</a></li>
-                <li><a href="/about">{t('header.about')}</a></li>
+                <li><a href={getRelativeLocaleUrl(locale, 'contact')}>{t('header.explore_map', locale)}</a></li>
+                <li><a href={getRelativeLocaleUrl(locale, 'about')}>{t('header.about', locale)}</a></li>
             </ul>
             <div class="language-switcher">
-                <LanguageSwitcher />
+                <LanguageSwitcher client:load currentLocale={currentLocale} />
             </div>
         </nav>
     </div>

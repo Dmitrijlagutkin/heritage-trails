@@ -1,19 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
+import { messages } from "../i18n/messages";
 
-export const MapSection = () => {
-  const [count, setCount] = useState(0);
+interface MapSectionProps {
+  currentLocale: string | undefined;
+}
+
+export const MapSection = ({ currentLocale }: MapSectionProps) => {
+  const locale = currentLocale || "ua";
 
   return (
-    <div className="container bg-[var(--color-natural-lightgray)] p-6 rounded-lg">
-      <h2 className="text-[var(--color-secondary-lightgreen)] font-bold text-2xl mb-4">
-        Second Section
-      </h2>
-      <button
-        onClick={() => setCount(count + 1)}
-        className="bg-[var(--color-secondary-lightgreen)] text-[var(--color-primary)] px-4 py-2 rounded hover:bg-[var(--color-secondary-lightyellow)] transition-colors"
-      >
-        Count: {count}
-      </button>
-    </div>
+    <section className="container mx-auto px-4 py-16">
+      <div className="bg-[var(--color-natural-lightgray)] p-8 rounded-lg">
+        <h2 className="text-[var(--color-secondary-lightgreen)] font-bold text-3xl mb-6">
+          {messages[locale as keyof typeof messages].explore}
+        </h2>
+        <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
+          <p className="text-gray-500">Map will be implemented here</p>
+        </div>
+      </div>
+    </section>
   );
 };
