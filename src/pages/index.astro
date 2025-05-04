@@ -3,9 +3,9 @@ import { t } from '../i18n/i18n';
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import MainSection from '../features/main-section/components/MainSection.astro';
-import { MapSection } from '../features/map-section/components/MapSection';
 import FeaturesSection from '../features/features-section/components/FeaturesSection.astro';
 import StatisticSection from '../features/statistic-section/components/StatisticSection.astro';
+import MapSection from '../features/map-section/components/MapSection.astro';
 
 const defaultLocale = 'en';
 const locale = defaultLocale;
@@ -16,8 +16,8 @@ const locale = defaultLocale;
 	<div class="flex flex-col gap-16">
 		<MainSection />
 		<StatisticSection />
+		<MapSection />
 		<FeaturesSection />
-		<MapSection client:idle currentLocale={locale} />
 	</div>
 </Layout>
 
