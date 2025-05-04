@@ -1,0 +1,15 @@
+---
+import { t } from '../../../i18n/i18n';
+import Button from '../../../components/Button.astro';
+const { currentLocale } = Astro;
+
+const locale = currentLocale || 'en';
+---
+
+<div class="flex flex-col gap-6">
+    <h2 class="text-5xl font-bold">{t('home.map_section.title', locale)}</h2>
+    <p class="text-lg text-natural-300 pb-2">{t('home.map_section.description', locale)}</p>
+    <Button href='/map' variant="primary-100" class="w-fit">{t('home.map_section.button', locale)}</Button>
+</div>
+       
+

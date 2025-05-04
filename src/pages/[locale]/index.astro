@@ -2,10 +2,10 @@
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import MainSection from '../../features/main-section/components/MainSection.astro';
-import { MapSection } from '../../features/map-section/components/MapSection';
 import FeaturesSection from '../../features/features-section/components/FeaturesSection.astro';
 import { t } from '../../i18n/i18n';
 import StatisticSection from '../../features/statistic-section/components/StatisticSection.astro';
+import MapSection from '../../features/map-section/components/MapSection.astro';
 
 export function getStaticPaths() {
   return [
@@ -24,7 +24,7 @@ const { locale } = Astro.params;
 		<MainSection />
 		<StatisticSection />
 		<FeaturesSection />
-		<MapSection client:idle currentLocale={locale} />
+		<MapSection />
 	</div>
 </Layout>
 

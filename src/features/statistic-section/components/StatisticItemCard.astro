@@ -1,14 +1,10 @@
 ---
-import { t } from '../../../i18n/i18n';
-
 interface Props {
     title: string;
     number: string;
 }
 
 const { title, number } = Astro.props;
-const { currentLocale } = Astro;
-const locale = currentLocale || 'en';
 ---
 
 <div class="bg-natural-white rounded-lg p-4 text-center shadow-lg">
