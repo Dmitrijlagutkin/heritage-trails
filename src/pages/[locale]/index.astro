@@ -23,8 +23,9 @@ const { locale } = Astro.params;
 	<div class="flex flex-col gap-16">
 		<MainSection />
 		<StatisticSection />
-		<MapSection client:idle currentLocale={locale} />
 		<FeaturesSection />
+		<MapSection client:idle currentLocale={locale} />
 	</div>
 </Layout>
+
 
