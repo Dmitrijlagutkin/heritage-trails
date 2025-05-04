@@ -12,9 +12,19 @@
       "description": "Desde impresionantes maravillas naturales hasta campos de batalla históricos y sitios culturales—descubre las historias y lugares que definen la nación. Usa el mapa para encontrar y explorar estos destinos excepcionales.",
       "button": "Explorar en el Mapa"
     },
+    "statistic_section": {
+      "title": "Explora el Alcance de Nuestro Patrimonio Nacional",
+      "description": "Nuestra plataforma destaca la extensa red de sitios naturales y culturales del país. Desde impresionantes parques nacionales hasta monumentos históricos y ríos preservados, descubre todo lo que está esperando para ser explorado.",
+      "button": "Explorar Patrimonio Nacional"
+    },
     "features_section": {
-      "title": "Características",
-      "description": "Senderos del Patrimonio es una plataforma que te permite explorar la historia de los Estados Unidos. Es una plataforma que te permite explorar la historia de los Estados Unidos."
+      "title": "¿Por Qué Somos?",
+      "item_1_title": "Explora Parques Nacionales en un Mapa Interactivo",
+      "item_1_description": "Encuentra parques en todo Estados Unidos con nuestro mapa hermoso y zoomable. Navega fácilmente por ubicación y descubre joyas ocultas en cada rincón del país.",
+      "item_2_title": "Información de Parques en Vivo del Servicio Nacional de Parques",
+      "item_2_description": "Obtén detalles actualizados directamente desde la base de datos oficial del NPS. Desde descripciones de parques hasta alertas y direcciones — todo es preciso y actual.",
+      "item_3_title": "Planificación de Viajes con Pistas Clave",
+      "item_3_description": "Consulta horarios de apertura, eventos próximos, clima y detalles de accesibilidad. Todo lo que necesitas para preparar tu próxima aventura al aire libre."
     },
     "footer": {
       "about": {
