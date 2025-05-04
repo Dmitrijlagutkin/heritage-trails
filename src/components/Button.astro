@@ -1,19 +1,28 @@
 ---
 interface Props {
     href: string;
-    variant?: 'primary' | 'secondary';
+    variant?: 'primary' | 'secondary' | 'tertiary';
+    class?: string;
 }
 
-const { href, variant = 'primary' } = Astro.props;
+const { href, variant = 'primary', class: className } = Astro.props;
 ---
 
 <a
     href={href}
     class:list={[
-        'inline-flex items-center justify-center px-6 py-3 rounded-md font-semibold no-underline transition-all duration-300',
-        variant === 'primary' && 'bg-secondary-200  hover:bg-secondary-300 text-primary-400',
-        variant === 'secondary' && 'bg-transparent text-natural-200 border-2 border-natural-100 hover:bg-white/10'
+        'inline-flex items-center justify-center px-6 py-3 rounded-full font-semibold no-underline transition-all duration-300',
+        variant === 'primary' && 'bg-secondary-200 hover:bg-secondary-300 text-primary-400',
+        variant === 'secondary' && 'bg-transparent text-natural-200 border-2 border-natural-100 hover:bg-white/10',
+        variant === 'tertiary' && 'bg-secondary-400 text-white hover:opacity-90',
+        className
     ]}
 >
     <slot />
+    {variant === 'tertiary' && (
+        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+    )}
 </a>

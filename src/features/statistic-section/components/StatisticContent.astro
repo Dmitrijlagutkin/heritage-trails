@@ -1,0 +1,33 @@
+---
+import { t } from '../../../i18n/i18n';
+import StatisticCarousel from './StatisticCarousel.astro';
+
+const { currentLocale } = Astro;
+const locale = currentLocale || 'en';
+
+const statisticItems = [
+    { title: "National Parks and Preserves", number: "70+" },
+    { title: "Historical Sites and Memorials", number: "200+" },
+    { title: "Recreational Areas", number: "30+" },
+    { title: "Special Designations", number: "85+" },
+    { title: "Trails and Parkways", number: "10+" },
+    { title: "Waterways and Rivers", number: "10+" }
+];
+---
+
+<div class="grid grid-cols-2 gap-4">
+   
+    <div class="space-y-4">
+        <StatisticCarousel items={statisticItems} />
+    </div>
+    <div>
+        <div class="bg-natural-white rounded-lg p-4 h-full">
+            <h3 class="text-2xl font-bold mb-2">
+                Total Heritage Sites
+            </h3>
+            <p class="text-4xl font-bold text-center">450+</p>
+        </div>
+    </div>
+</div>
+   
+

@@ -1,10 +1,11 @@
 ---
+import { t } from '../i18n/i18n';
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import MainSection from '../features/main-section/components/MainSection.astro';
 import { MapSection } from '../features/map-section/components/MapSection';
 import FeaturesSection from '../features/features-section/components/FeaturesSection.astro';
-import { t } from '../i18n/i18n';
+import StatisticSection from '../features/statistic-section/components/StatisticSection.astro';
 
 const defaultLocale = 'en';
 const locale = defaultLocale;
@@ -12,8 +13,11 @@ const locale = defaultLocale;
 
 <Layout title={t('home.main_screen.title', locale)}>
 	<Header />
-	<MainSection />
-	<MapSection client:idle currentLocale={locale} />
-	<FeaturesSection />
+	<div class="flex flex-col gap-16">
+		<MainSection />
+		<StatisticSection />
+		<FeaturesSection />
+		<MapSection client:idle currentLocale={locale} />
+	</div>
 </Layout>
 

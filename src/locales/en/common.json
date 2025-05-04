@@ -3,7 +3,7 @@
     "main_screen": {
       "title": "Heritage Trails",
       "subtitle": "Discover the Wild, Walk Through Time",
-      "description_1": "Explore <span>{{PARK_TYPE}}</span>, all in one place.",
+      "description_1": "Explore [PARK_TYPE], all in one place.",
       "description_2": "Tap on the map to uncover photos, stories, and hidden gems across preserved lands. Whether you're planning a visit or just curious, <span>Heritage Trails</span> brings nature and history to your fingertips."
     },
     "map_section": {
@@ -12,9 +12,19 @@
       "description": "From awe-inspiring natural wonders to historic battlefields and cultural landmarks—uncover the stories and sites that define the nation. Use the map to find and explore these remarkable destinations.",
       "button": "Explore on the Map"
     },
+    "statistic_section": {
+      "title": "Explore the Scope of Our National Heritage",
+      "description": "Our platform highlights the vast network of natural and cultural sites across the country. From breathtaking national parks to historic landmarks and preserved rivers, discover the full extent of what's waiting to be explored.",
+      "button": "Explore National Heritage"
+    },
     "features_section": {
-      "title": "Features",
-      "description": "Heritage Trails is a platform that allows you to explore the history of the United States. It is a platform that allows you to explore the history of the United States."
+      "title": "Why We Are...",
+      "item_1_title": "Explore National Parks on an Interactive Map",
+      "item_1_description": "Find parks across the U.S. with our beautiful, zoomable map. Easily browse by location and discover hidden gems in every corner of the country.",
+      "item_2_title": "Live Park Info from the National Park Service",
+      "item_2_description": "Get up-to-date details straight from the official NPS database. From park descriptions to alerts and directions — everything is accurate and current.",
+      "item_3_title": "Plan Your Adventure with Key Insights",
+      "item_3_description": "Check out opening hours, upcoming events, weather, and accessibility details. All the info you need to prepare for your next outdoor experience." 
     },
     "footer": {
       "about": {

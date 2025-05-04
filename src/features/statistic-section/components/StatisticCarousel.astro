@@ -1,0 +1,41 @@
+---
+import StatisticItemCard from './StatisticItemCard.astro';
+import type { StatisticItem } from '../types';
+
+const { items } = Astro.props as { items: StatisticItem[] };
+---
+
+<div class="relative h-[360px] px-3 overflow-hidden">
+    <div class="flex flex-col gap-4 animate-scroll">
+        {items.map((item: StatisticItem) => (
+            <div>
+                <StatisticItemCard 
+                    title={item.title} 
+                    number={item.number}
+                />
+            </div>
+        ))}
+        {items.map((item: StatisticItem) => (
+            <div>
+                <StatisticItemCard 
+                    title={item.title} 
+                    number={item.number}
+                />
+            </div>
+        ))}
+    </div>
+</div>
+
+<style>
+    @keyframes scroll {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-50%);
+        }
+    }
+    .animate-scroll {
+        animation: scroll 20s linear infinite;
+    }
+</style> 
