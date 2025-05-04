@@ -1,23 +1,10 @@
 ---
 import StatisticCarousel from './StatisticCarousel.astro';
-
-const { currentLocale } = Astro;
-const locale = currentLocale || 'en';
-
-const statisticItems = [
-    { title: "National Parks and Preserves", number: "70+" },
-    { title: "Historical Sites and Memorials", number: "200+" },
-    { title: "Recreational Areas", number: "30+" },
-    { title: "Special Designations", number: "85+" },
-    { title: "Trails and Parkways", number: "10+" },
-    { title: "Waterways and Rivers", number: "10+" }
-];
 ---
 
 <div class="grid grid-cols-2 gap-4">
-   
     <div class="space-y-4">
-        <StatisticCarousel items={statisticItems} />
+        <StatisticCarousel />
     </div>
     <div>
         <div class="bg-natural-white rounded-lg p-4 h-full">

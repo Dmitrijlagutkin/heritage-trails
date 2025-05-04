@@ -2,8 +2,7 @@ import { useEffect, useRef } from 'react';
 import * as maptilersdk from '@maptiler/sdk';
 import '@maptiler/sdk/dist/maptiler-sdk.css';
 import { envVars } from '../../../config/env';
-import { t } from '../../../i18n/i18n';
-import Button from '../../../components/Button.astro';
+
 // Configure MapTiler SDK
 maptilersdk.config.apiKey = envVars.MAP_TILER_API_KEY;
 
