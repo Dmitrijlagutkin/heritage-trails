@@ -1,13 +1,12 @@
 ---
 import StatisticItemCard from './StatisticItemCard.astro';
 import type { StatisticItem } from '../types';
-
-const { items } = Astro.props as { items: StatisticItem[] };
+import { statisticList } from '../data/statisticList';
 ---
 
 <div class="relative h-[360px] px-3 overflow-hidden">
     <div class="flex flex-col gap-4 animate-scroll">
-        {items.map((item: StatisticItem) => (
+        {statisticList.map((item: StatisticItem) => (
             <div>
                 <StatisticItemCard 
                     title={item.title} 
@@ -15,7 +14,7 @@ const { items } = Astro.props as { items: StatisticItem[] };
                 />
             </div>
         ))}
-        {items.map((item: StatisticItem) => (
+        {statisticList.map((item: StatisticItem) => (
             <div>
                 <StatisticItemCard 
                     title={item.title} 

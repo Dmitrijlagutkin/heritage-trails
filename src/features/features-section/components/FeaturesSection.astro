@@ -1,24 +1,12 @@
 ---
 import { t } from '../../../i18n/i18n';
 import FeatureItemCard from './FeatureItemCard.astro';
+import { features } from '../data/features';
 const { currentLocale } = Astro;
 
 const locale = currentLocale || 'en';
 
-const features = [
-    {
-        title: t('home.features_section.item_1_title', locale),
-        description: t('home.features_section.item_1_description', locale)
-    },
-    {
-        title: t('home.features_section.item_2_title', locale),
-        description: t('home.features_section.item_2_description', locale)
-    },
-    {
-        title: t('home.features_section.item_3_title', locale),
-        description: t('home.features_section.item_3_description', locale)
-    }
-];
+
 ---
 
 <section class="bg-primary-100 rounded-lg pt-[60px] pb-[60px] px-[30px] mx-10">      
@@ -27,8 +15,8 @@ const features = [
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
                 <FeatureItemCard 
-                    title={feature.title}
-                    description={feature.description}
+                    title={t(feature.title, locale )}
+                    description={t(feature.description, locale)}
                     index={index + 1}
                 />
             ))}
