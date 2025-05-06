@@ -22,17 +22,9 @@ const locale = currentLocale || 'en';
                 <li>
                     <a 
                         href={getRelativeLocaleUrl(locale, 'contact')} 
-                        class="text-natural-100 no-underline text-lg transition-opacity duration-300 hover:opacity-80"
+                        class="text-natural-100 no-underline text-lg transition-opacity duration-300 hover:opacity-80 hover:underline"
                     >
                         {t('header.explore_map', locale)}
-                    </a>
-                </li>
-                <li>
-                    <a 
-                        href={getRelativeLocaleUrl(locale, 'about')} 
-                        class="text-natural-100 no-underline text-lg transition-opacity duration-300 hover:opacity-80"
-                    >
-                        {t('header.about', locale)}
                     </a>
                 </li>
             </ul>

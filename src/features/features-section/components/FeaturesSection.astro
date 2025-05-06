@@ -5,21 +5,16 @@ import { features } from '../data/features';
 const { currentLocale } = Astro;
 
 const locale = currentLocale || 'en';
-
-
 ---
 
-<section class="bg-primary-100 rounded-lg pt-[60px] pb-[60px] px-[30px] mx-10">      
-    <div class="flex flex-col gap-8">
-        <h2 class="text-5xl font-bold leading-tight text-natural-white">{t('home.features_section.title', locale)}</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-                <FeatureItemCard 
-                    title={t(feature.title, locale )}
-                    description={t(feature.description, locale)}
-                    index={index + 1}
-                />
-            ))}
-        </div>
+<section class="flex flex-col gap-8 mx-10">      
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {features.map((feature, index) => (
+            <FeatureItemCard 
+                title={t(feature.title, locale )}
+                description={t(feature.description, locale)}
+                index={index + 1}
+            />
+        ))}
     </div>
 </section>

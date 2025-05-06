@@ -15,7 +15,8 @@
     "statistic_section": {
       "title": "Explore the Scope of Our National Heritage",
       "description": "Our platform highlights the vast network of natural and cultural sites across the country. From breathtaking national parks to historic landmarks and preserved rivers, discover the full extent of what's waiting to be explored.",
-      "button": "Explore National Heritage"
+      "button": "Explore National Heritage",
+      "total_places": "Total 450+ great places to visit"
     },
     "features_section": {
       "title": "Why We Are...",
@@ -27,37 +28,9 @@
       "item_3_description": "Check out opening hours, upcoming events, weather, and accessibility details. All the info you need to prepare for your next outdoor experience." 
     },
     "footer": {
-      "about": {
-        "title": "About Us",
-        "description": "Discover the beauty of national parks",
-        "links": {
-          "about": "About",
-          "contact": "Contact",
-          "privacy": "Privacy"
-        }
-      },
-      "explore": {
-        "title": "Explore",
-        "links": {
-          "parks": "Parks",
-          "trails": "Trails",
-          "activities": "Activities"
-        }
-      },
-      "legal": {
-        "title": "Legal",
-        "links": {
-          "terms": "Terms",
-          "privacy": "Privacy",
-          "cookies": "Cookies"
-        }
-      },
-      "social": {
-        "title": "Follow Us"
-      },
-      "copyright": "National Parks © 2024",
-      "sitemap": "Sitemap",
-      "accessibility": "Accessibility"
+        "all_rights_reserved": "All rights reserved.",
+        "data_provided_by": "Data provided by",
+        "maps_powered_by": "Maps powered by"
     }
   },
   "header": {
