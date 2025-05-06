@@ -15,7 +15,8 @@
     "statistic_section": {
       "title": "Explora el Alcance de Nuestro Patrimonio Nacional",
       "description": "Nuestra plataforma destaca la extensa red de sitios naturales y culturales del país. Desde impresionantes parques nacionales hasta monumentos históricos y ríos preservados, descubre todo lo que está esperando para ser explorado.",
-      "button": "Explorar Patrimonio Nacional"
+      "button": "Explorar Patrimonio Nacional",
+      "total_places": "Total 450+ lugares para visitar"
     },
     "features_section": {
       "title": "¿Por Qué Somos?",
@@ -27,37 +28,9 @@
       "item_3_description": "Consulta horarios de apertura, eventos próximos, clima y detalles de accesibilidad. Todo lo que necesitas para preparar tu próxima aventura al aire libre."
     },
     "footer": {
-      "about": {
-        "title": "Sobre Nosotros",
-        "description": "Descubre la historia y la cultura de los Estados Unidos.",
-        "links": {
-          "about": "Sobre Nosotros",
-          "contact": "Contacto",
-          "privacy": "Privacidad"
-        }
-      },
-      "explore": {
-        "title": "Explorar",
-        "links": {
-          "parks": "Parques",
-          "trails": "Senderos",
-          "activities": "Actividades"
-        }
-      },
-      "legal": {
-        "title": "Legal",
-        "links": {
-          "terms": "Términos y Condiciones",
-          "privacy": "Privacidad",
-          "cookies": "Cookies"
-        }
-      },
-      "social": {
-        "title": "Síguenos en Redes Sociales"
-      },
-      "copyright": "Parques Nacionales © 2024",
-      "sitemap": "Mapa del Sitio",
-      "accessibility": "Accesibilidad"
+      "all_rights_reserved": "Todos los derechos reservados.",
+      "data_provided_by": "Datos proporcionados por",
+      "maps_powered_by": "Mapas proporcionados por"
     }
   },
   "header": {

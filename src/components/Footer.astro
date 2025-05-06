@@ -1,0 +1,48 @@
+---
+import { t } from '../i18n/i18n';
+const { currentLocale } = Astro;
+
+const locale = currentLocale || 'en';
+---
+
+<footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col gap-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-sm">
+                    <p>© {new Date().getFullYear()} Heritage Trails. {t('home.footer.all_rights_reserved', locale)}</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-sm">{t('home.footer.data_provided_by', locale)}</span>
+                    <a 
+                        href="https://www.nps.gov" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        class="text-secondary-200 hover:underline transition-colors duration-200 text-sm font-medium"
+                    >
+                        National Park Service
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 border-t border-gray-800 pt-6">
+                <a 
+                    href="mailto:heritagetrailsservice@gmail.com" 
+                    class="text-sm text-gray-400 hover:text-gray-300 hover:underline transition-colors duration-200"
+                >
+                    heritagetrailsservice@gmail.com
+                </a>
+                <div class="flex items-center gap-2">
+                    <span class="text-sm">{t('home.footer.maps_powered_by', locale)}</span>
+                    <a 
+                        href="https://www.maptiler.com" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        class="text-secondary-200 hover:underline transition-colors duration-200 text-sm font-medium"
+                    >
+                        MapTiler
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> 

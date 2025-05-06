@@ -1,5 +1,9 @@
 ---
 import StatisticCarousel from './StatisticCarousel.astro';
+import { t } from '../../../i18n/i18n';
+const { currentLocale } = Astro;
+
+const locale = currentLocale || 'en';
 ---
 
 <div class="grid grid-cols-2 gap-4">
@@ -8,10 +12,9 @@ import StatisticCarousel from './StatisticCarousel.astro';
     </div>
     <div>
         <div class="bg-natural-white rounded-lg p-4 h-full">
-            <h3 class="text-2xl font-bold mb-2">
-                Total Heritage Sites
+            <h3 class="text-2xl font-bold mb-2 text-center">
+                {t('home.statistic_section.total_places', locale)}
             </h3>
-            <p class="text-4xl font-bold text-center">450+</p>
         </div>
     </div>
 </div>
