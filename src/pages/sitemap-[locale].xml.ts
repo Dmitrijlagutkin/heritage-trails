@@ -14,7 +14,7 @@ export function getStaticPaths() {
 
 export async function GET({ params }: { params: Params }) {
   const { locale } = params;
-  const baseUrl = 'https://heritage-trails.com';
+  const baseUrl = 'https://heritage-trails.vercel.app';
   
   // Define your site's pages
   const pages = [

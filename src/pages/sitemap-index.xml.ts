@@ -1,6 +1,6 @@
 export async function GET() {
   const locales = ['en', 'ua', 'es'];
-  const baseUrl = 'https://heritage-trails.com';
+  const baseUrl = 'https://heritage-trails.vercel.app';
 
   const sitemapUrls = locales.map(locale => ({
     loc: `${baseUrl}/sitemap-${locale}.xml`,
