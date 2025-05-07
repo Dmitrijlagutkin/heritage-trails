@@ -35,5 +35,8 @@ export default defineConfig({
       cssMinify: true,
       minify: true,
     },
+    define: {
+      'import.meta.env.MAP_TILER_API_KEY': JSON.stringify(process.env.MAP_TILER_API_KEY)
+    }
   },
 });
