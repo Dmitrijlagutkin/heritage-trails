@@ -5,6 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://heritage-trails.com', // Replace with your actual domain
   integrations: [
     react(),
     tailwind({
@@ -22,12 +23,17 @@ export default defineConfig({
   output: "static",
   build: {
     format: "directory",
+    inlineStylesheets: 'auto',
   },
   vite: {
     resolve: {
       alias: {
         "@": "/src",
       },
+    },
+    build: {
+      cssMinify: true,
+      minify: true,
     },
   },
 });
