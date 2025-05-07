@@ -4,6 +4,14 @@ interface Params {
   locale: string;
 }
 
+export function getStaticPaths() {
+  return [
+    { params: { locale: 'en' } },
+    { params: { locale: 'ua' } },
+    { params: { locale: 'es' } }
+  ];
+}
+
 export async function GET({ params }: { params: Params }) {
   const { locale } = params;
   const baseUrl = 'https://heritage-trails.com';
