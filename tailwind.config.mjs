@@ -3,10 +3,6 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
-      backgroundImage: {
-        "main-section":
-          "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/homeMainSectionBG.jpg')",
-      },
       colors: {
         primary: {
           100: "#063b26",
