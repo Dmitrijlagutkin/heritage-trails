@@ -15,6 +15,7 @@ const {
 } = Astro.props;
 
 const locale = currentLocale || 'en';
+const siteUrl = 'https://heritage-trails.vercel.app';
 ---
 
 <!doctype html>
@@ -47,10 +48,10 @@ const locale = currentLocale || 'en';
 		<link rel="canonical" href={canonicalURL} />
 		
 		<!-- Alternate Language Versions -->
-		<link rel="alternate" hreflang="en" href={getRelativeLocaleUrl('en', Astro.url.pathname)} />
-		<link rel="alternate" hreflang="ua" href={getRelativeLocaleUrl('ua', Astro.url.pathname)} />
-		<link rel="alternate" hreflang="es" href={getRelativeLocaleUrl('es', Astro.url.pathname)} />
-		<link rel="alternate" hreflang="x-default" href={getRelativeLocaleUrl('en', Astro.url.pathname)} />
+		<link rel="alternate" hreflang="en-US" href={`${siteUrl}/`} />
+		<link rel="alternate" hreflang="uk" href={`${siteUrl}/ua/`} />
+		<link rel="alternate" hreflang="es-ES" href={`${siteUrl}/es/`} />
+		<link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
 		
 		<!-- Favicon -->
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
