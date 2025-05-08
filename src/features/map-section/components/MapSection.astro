@@ -8,5 +8,5 @@ const locale = currentLocale || 'en';
 
 <section class="mx-10 grid grid-cols-2 gap-4">
     <MapTextSection />
-    <Map  client:idle currentLocale={locale}  />
+    <Map client:visible currentLocale={locale}  />
 </section>
