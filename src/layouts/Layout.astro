@@ -2,8 +2,6 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { getRelativeLocaleUrl } from 'astro:i18n';
-import { t } from '../i18n/i18n';
 import { SEO_KEYWORDS, DEFAULT_SEO } from '../constants/seo';
 
 const { 
@@ -54,9 +52,11 @@ const siteUrl = 'https://heritage-trails.vercel.app';
 		<link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
 		
 		<!-- Favicon -->
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 		<link rel="manifest" href="/site.webmanifest" />
+		<meta name="theme-color" content="#ffffff" />
 
 		<!-- Additional SEO Meta Tags -->
 		<meta name="robots" content="index, follow" />
