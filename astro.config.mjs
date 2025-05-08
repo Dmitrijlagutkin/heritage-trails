@@ -34,6 +34,12 @@ export default defineConfig({
     build: {
       cssMinify: true,
       minify: true,
+      sourcemap: true
     }
   },
+  image: {
+    service: {
+      entrypoint: 'astro/assets/services/passthrough'
+    }
+  }
 });
