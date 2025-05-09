@@ -1,0 +1,53 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SEO from '../../components/SEO.astro';
+
+const posts = [
+  {
+    title: "Top 10 National Parks to Visit in 2024",
+    description: "Discover the most breathtaking national parks to explore this year.",
+    date: "2024-03-19",
+    slug: "top-10-national-parks-2024"
+  },
+  {
+    title: "Essential Hiking Tips for National Park Visitors",
+    description: "Learn how to prepare for your next national park hiking adventure.",
+    date: "2024-03-18",
+    slug: "hiking-tips-national-parks"
+  },
+  {
+    title: "Best Time to Visit Yellowstone National Park",
+    description: "Plan your perfect trip to Yellowstone with our seasonal guide.",
+    date: "2024-03-17",
+    slug: "best-time-yellowstone"
+  }
+];
+---
+
+<Layout>
+  <SEO 
+    title="National Park Blog - Heritage Trails"
+    description="Discover tips, guides, and insights about visiting US National Parks. Plan your next adventure with our expert advice."
+    type="website"
+  />
+  
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold mb-8">National Park Blog</h1>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {posts.map(post => (
+        <article class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold mb-2">
+              <a href={`/blog/${post.slug}`} class="hover:text-primary-100">
+                {post.title}
+              </a>
+            </h2>
+            <p class="text-natural-300 mb-4">{post.description}</p>
+            <time class="text-sm text-natural-400">{post.date}</time>
+          </div>
+        </article>
+      ))}
+    </div>
+  </main>
+</Layout> 

@@ -1,13 +1,35 @@
+# Global rules for all crawlers
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /_astro/
+Disallow: /node_modules/
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 5
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 5
+
+# Specific rules for Yandex
+User-agent: Yandex
+Allow: /
+Crawl-delay: 5
 
 # Sitemaps
 Sitemap: https://heritage-trails.vercel.app/sitemap.xml
 
-# Disallow admin and private routes
-Disallow: /admin/
-Disallow: /private/
-Disallow: /api/
+# Host
+Host: https://heritage-trails.vercel.app
 
-# Crawl-delay
-Crawl-delay: 10 
+# Clean-param
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content 

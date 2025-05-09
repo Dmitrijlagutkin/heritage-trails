@@ -27,7 +27,15 @@ export const SEO_KEYWORDS = [
   'Badlands National Park', 'Carlsbad Caverns National Park', 'Mammoth Cave National Park',
 
   // General Terms
-  'nps', 'National Park Service', 'US National Parks', 'heritage trails', 'hiking', 'nature', 'outdoor activities', 'travel', 'exploration'
+  'nps', 'National Park Service', 'US National Parks', 'heritage trails', 'hiking', 'nature', 'outdoor activities', 'travel', 'exploration',
+  'park finder', 'trail maps', 'park locations', 'park directory', 'park database',
+  'camping', 'wildlife watching', 'bird watching', 'photography spots', 'scenic views',
+  'road trip', 'vacation planning', 'travel guide', 'park guide', 'nature tourism',
+  'ecotourism', 'wilderness', 'conservation', 'protected areas', 'natural heritage',
+  'outdoor recreation', 'scenic beauty', 'landmarks', 'historical sites',
+  'discover parks', 'explore nature', 'visit parks', 'plan trip', 'find parks',
+  'locate trails', 'navigate parks', 'experience nature',
+  "Discover and explore national parks through our interactive map. Plan your next adventure with Heritage Trails"
 ].join(', ');
 
 export const DEFAULT_SEO = {
