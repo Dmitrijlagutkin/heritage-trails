@@ -1,6 +1,6 @@
 ---
 import StatisticCarousel from './StatisticCarousel.astro';
-import { t } from '../../../i18n/i18n';
+import InfoCard from './InfoCard.astro';
 const { currentLocale } = Astro;
 
 const locale = currentLocale || 'en';
@@ -11,11 +11,7 @@ const locale = currentLocale || 'en';
         <StatisticCarousel />
     </div>
     <div>
-        <div class="bg-natural-white rounded-lg p-4 h-full">
-            <h3 class="text-2xl font-bold mb-2 text-center">
-                {t('home.statistic_section.total_places', locale)}
-            </h3>
-        </div>
+        <InfoCard />
     </div>
 </div>
    
