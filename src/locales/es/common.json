@@ -16,7 +16,17 @@
       "title": "Explora el Alcance de Nuestro Patrimonio Nacional",
       "description": "Nuestra plataforma destaca la extensa red de sitios naturales y culturales del país. Desde impresionantes parques nacionales hasta monumentos históricos y ríos preservados, descubre todo lo que está esperando para ser explorado.",
       "button": "Explorar Patrimonio Nacional",
-      "total_places": "Total 450+ lugares para visitar"
+      "total_places": "Total 450+ lugares para visitar",
+      "info_card": {
+        "entrance_fees": "Entradas",
+        "parking_availability": "Disponibilidad de Parking",
+        "wildlife_alerts": "Alertas de Fauna",
+        "park_hours": "Horarios de Parque",
+        "camping_sites": "Sitios de Camping",
+        "popular_activities": "Actividades Populares",
+        "nearest_lodging_or_houses": "Alojamientos Cercanos",
+        "weather_conditions": "Condiciones Climáticas"
+      }
     },
     "features_section": {
       "title": "¿Por Qué Somos?",

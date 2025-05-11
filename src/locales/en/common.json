@@ -16,7 +16,17 @@
       "title": "Explore the Scope of Our National Heritage",
       "description": "Our platform highlights the vast network of natural and cultural sites across the country. From breathtaking national parks to historic landmarks and preserved rivers, discover the full extent of what's waiting to be explored.",
       "button": "Explore National Heritage",
-      "total_places": "Total 450+ great places to visit"
+      "total_places": "Total 450+ great places to visit",
+      "info_card": {
+        "entrance_fees": "Entrance Fees",
+        "parking_availability": "Parking Availability",
+        "wildlife_alerts": "Wildlife Alerts",
+        "park_hours": "Park Hours",
+        "camping_sites": "Camping Sites",
+        "popular_activities": "Popular Activities",
+        "nearest_lodging_or_houses": "Nearest Lodging",
+        "weather_conditions": "Weather Conditions"
+      }
     },
     "features_section": {
       "title": "Why We Are...",
