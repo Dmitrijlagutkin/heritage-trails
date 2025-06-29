@@ -5,16 +5,14 @@ const GA_MEASUREMENT_ID = 'G-YQLH9TRJQ7';
 <!-- Google Analytics -->
 <!-- Google tag (gtag.js) -->
 <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}></script>
-<script>
-  // @ts-ignore
-  window.dataLayer = window.dataLayer || [];
-  // @ts-ignore
-  function gtag() {
-    // @ts-ignore
-    dataLayer.push(arguments);
-  }
-  // @ts-ignore
-  gtag('js', new Date());
-  // @ts-ignore
-  gtag('config', GA_MEASUREMENT_ID);
+
+<!-- Inline configuration for GA4 -->
+<script is:inline>
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${GA_MEASUREMENT_ID}');
+  `}
 </script>
+

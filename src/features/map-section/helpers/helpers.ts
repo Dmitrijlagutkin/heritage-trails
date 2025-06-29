@@ -14,7 +14,6 @@ export const handlePointHover = (e: maptilersdk.MapLayerMouseEvent, map: maptile
     map.getCanvas().style.cursor = 'pointer'
 
     const feature = e.features?.[0]
-    console.log(feature)
     if (!feature) return
 
     const coordinates = (feature.geometry as Point).coordinates.slice()
