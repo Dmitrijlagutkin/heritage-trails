@@ -2,6 +2,7 @@
 import LanguageSwitcher from './LanguageSwitcher';
 import { getRelativeLocaleUrl } from 'astro:i18n';
 import { t } from '../i18n/i18n';
+import heritageLogo from '../assets/heritage.svg';
 const { currentLocale } = Astro;
 
 const locale = currentLocale || 'en';
@@ -12,8 +13,9 @@ const locale = currentLocale || 'en';
         <div>
             <a 
                 href={getRelativeLocaleUrl(locale, '')} 
-                class="text-natural-100 text-2xl font-semibold no-underline transition-opacity duration-300 hover:opacity-80"
+                class="flex items-center gap-2 text-natural-100 text-2xl font-semibold no-underline transition-opacity duration-300 hover:opacity-80"
             >
+                <img src={heritageLogo.src} width={heritageLogo.width} height={heritageLogo.height} alt="Heritage Trails logo" class="h-8 w-auto filter invert brightness-0" loading="lazy" />
                 Heritage Trails
             </a>
         </div>
